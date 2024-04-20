@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidenav With Icons.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .sidenav{
+            height: 100%;
+            width: 160px;
+            background-color: #111;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            overflow-x: hidden;
+            padding-top: 16px;
+        }
+        .sidenav a{
+            padding: 6px 8px 6px 6px ;
+            text-decoration: none;
+            font-size: 20px;
+            color: #818181;
+            display: block;
+        }
+        .sidenav a:hover{
+            color: #f1f1f1;
+        }
+        .main{
+            margin-left: 160px;
+            padding: 0px 10px;
+        }
+        @media screen and (max-height:450px) {
+            .sidenav {padding-top:15px;}
+            .sidenav a{font-size: 18px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="sidenav">
+        <a href="#home"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="#services"><i class="fa fa-fw fa-wrench"></i> Services</a>
+        <a href="#clients"><i class="fa fa-fw fa-user"></i> Clients</a>
+        <a href="#contact"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+      </div>
+
+    <div class="main">
+        <h2>Sidenav with icon</h2>
+
+        <p>This side navigation is of full height (100%) and always shown.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, velit eius quidem ipsum excepturi magnam dolorum tempore? Minima quis nulla quisquam officia distinctio suscipit quidem sed! Reprehenderit sunt ut vitae ea, unde quis id nostrum odit expedita nihil porro rem quisquam saepe debitis suscipit cum? Iste officiis earum atque rerum?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate culpa possimus sapiente tenetur, nostrum velit similique tempore ipsam cupiditate tempora, pariatur quibusdam! Adipisci repellat aliquid cum consectetur rerum, harum quam omnis optio ducimus eveniet, nobis voluptatum repudiandae suscipit architecto assumenda sint iste quasi illo perspiciatis veritatis aliquam. Quaerat, sed possimus.</p>
+    </div>
+</body>
+</html>

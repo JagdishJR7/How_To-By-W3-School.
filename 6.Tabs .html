@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .tab {
+            overflow: hidden;
+            border: 2px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 2px solid #ccc;
+            border-top: none;
+        }
+
+        .tab button.active {
+            background-color: #ccc;
+
+        }
+
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <!-- Tabs are too perfect for single page Web Application, or for a web page -->
+
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event,'London')">London</button>
+        <button class="tablinks" onclick="openCity(event,'Mumbai')">Mumbai</button>
+        <button class="tablinks" onclick="openCity(event,'Tokyo')">Tokyo</button>
+    </div>
+
+    <!-- For city London  -->
+
+    <div id="London" class="tabcontent">
+        <h3>London</h3>
+        <p>London is the cpital city of England.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore nesciunt fugiat atque alias labore perferendis incidunt odit officiis, pariatur dicta eligendi similique reiciendis ducimus voluptas ea beatae velit fuga adipisci. Maiores sed hic, veniam possimus accusantium at mollitia, culpa laboriosam dignissimos dolor reprehenderit optio sint voluptatibus nisi cumque! Minus, velit!</p>
+    </div>
+
+    <!-- For city Mumbai -->
+
+    <div id="Mumbai" class="tabcontent">
+        <h3>Mumbai</h3>
+        <p>Mumbai is the financial city of India.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem vitae, neque rem accusamus tenetur, eius voluptatum beatae aspernatur ducimus excepturi at natus nemo quia quae nesciunt earum optio laborum doloremque?</p>
+    </div>
+
+    <!-- For city Tokyo  -->
+
+    <div id="Tokyo" class="tabcontent">
+        <h3>Tokyo</h3>
+        <p>Tokyo is the cpital city of Japan.</p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis quia quod illum dicta soluta impedit ab voluptates dignissimos sapiente qui aut provident, quo sint optio autem cupiditate facere ex, reprehenderit facilis quis repellendus obcaecati! Assumenda rerum amet modi vitae est.
+    </div>
+
+
+    <script>
+        function openCity(evt, cityName) {
+            // Declare all Variables
+            var i, tabcontent, tablinks;
+
+            // Get all element with class and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class= "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(cityName).style.display = "block";  
+            evt.currentTarget.className += " active";
+        }
+
+    </script>
+
+    
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrinks navbar </title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        #navbar {
+            width: 100%;
+            overflow: hidden;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 90px 10px;
+            top: 0;
+            position: fixed;
+            z-index: 99;
+            background-color: #f1f1f1;
+            transition: 0.3s;
+
+        }
+
+        #navbar a {
+            font-size: 25px;
+            text-decoration: none;
+            color: #555;
+            float: left;
+            text-align: center;
+            line-height: 25px;
+            padding: 10px;
+            /* border: 1px solid black; */
+            border-radius: 10px;
+
+        }
+        #navbar a:hover{
+            background-color: #ddd;
+            color: black;
+        }
+
+        #navbar a.active {
+            /* color: blue; */
+            color: white;
+            background-color: dodgerblue;
+        }
+
+        #navbar #logo {
+            font-size: 35px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        #navbar #navbar-right{
+            float: right;
+        }
+        @media screen and (max-width:580px){
+            #navbar {
+                padding: 20px 10px !important;
+            }
+            #navbar a{
+                float: none;
+                display: block;
+                text-align: left;
+            }
+            #navbar #navbar-right{
+                float: none;
+            }
+        }
+    </style>
+    
+    <script>
+        // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            document.getElementById("navbar").style.padding = "30px 10px";
+            document.getElementById("logo").style.fontSize = "25px";
+          } else {
+            document.getElementById("navbar").style.padding = "80px 10px";
+            document.getElementById("logo").style.fontSize = "35px";
+          }
+        }
+        </script>
+        
+</head>
+
+<body>
+    <div id="navbar">
+        <a href="#default" id="logo">Company Logo</a>
+        <div id="navbar-right">
+            <a href="#home" class="active">Home</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </div>
+    </div>
+
+    <div style="margin-top:300px ; padding: 15px 15px 2500px; ">
+        <h1>This Example demonstrates how to shrink a navigatin bar when the user starts to scroll the page.</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum impedit quidem enim distinctio nihil ad obcaecati adipisci, nam quisquam nesciunt dolorum quasi reprehenderit reiciendis. Similique aut hic voluptates porro, aspernatur nostrum aliquid quasi laboriosam architecto repudiandae odit facere ea quo inventore dolores! Aliquid laudantium unde sapiente labore sed minima error!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, doloribus quibusdam atque debitis, neque ea quae fugit cum assumenda voluptatum rem veritatis molestias quo, beatae similique. Mollitia quae soluta facere, assumenda totam asperiores maiores corporis doloremque esse culpa, nostrum neque accusantium aliquid consequuntur! Laboriosam beatae, eligendi, pariatur odit ullam necessitatibus quos cum amet exercitationem harum, consectetur eveniet veniam labore? Fugit, repellendus. Adipisci, alias laudantium iure eligendi sequi sit quod aliquid animi temporibus quidem dolorem amet sapiente, molestias, esse aspernatur necessitatibus. In, rem pariatur fugiat, voluptatibus cumque incidunt similique officia perspiciatis laborum ipsum, facilis debitis placeat eum nihil praesentium eveniet laboriosam!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias culpa asperiores labore blanditiis et reprehenderit, error, possimus qui iste porro nam ab fuga impedit sapiente dignissimos explicabo pariatur nulla accusamus omnis sed commodi? Quod fuga pariatur quis necessitatibus! Repellendus quis, adipisci harum officiis perferendis iusto, facilis eum accusamus ab omnis ratione quibusdam sapiente. Corrupti saepe sit, aut aspernatur neque maiores nisi eos eum repellat itaque sequi id adipisci repellendus earum dolore consequatur vero necessitatibus asperiores perferendis libero nemo? Cumque saepe nisi culpa quis, minima adipisci quod assumenda ipsa odit a, quos mollitia suscipit porro aut, similique amet ex autem itaque laboriosam pariatur quasi officiis impedit! Ipsam, dolorum obcaecati at explicabo quibusdam eius suscipit, ea quisquam sapiente corporis sed tenetur quam. Tenetur animi, eveniet corporis atque ad voluptatibus culpa commodi architecto quod numquam recusandae nam blanditiis exercitationem dolorem nihil, eos autem? Deserunt magnam sunt saepe hic? Alias vel esse est corporis repellat sapiente ex, reiciendis, rerum nulla provident animi tempora doloribus assumenda dolore repellendus nobis voluptatibus. Assumenda fugiat eius aperiam qui nam vero harum non adipisci possimus necessitatibus quos quibusdam doloremque veritatis modi praesentium cum vitae sint explicabo, consectetur blanditiis error rem eum quisquam! Nemo vero corporis, officiis et unde nam distinctio eum quis molestias esse excepturi beatae velit quibusdam sunt porro impedit consequatur totam dicta aliquam. Nulla iste aperiam minus beatae aspernatur dolores, esse porro odit vitae enim asperiores maxime earum! Incidunt quam odio corporis cumque distinctio assumenda? Saepe, hic? Cumque et repellat beatae obcaecati, magnam possimus commodi optio sunt error eligendi doloremque dignissimos illo. Officia consequatur nesciunt cumque iste consectetur unde, eligendi harum ipsam eaque quas quibusdam iusto voluptatem doloremque illo distinctio nam nisi fugit ducimus eum corrupti rem eos? Consequuntur debitis commodi ad deserunt ex rem nemo. Cum esse neque minus illum natus autem. Quam tenetur, delectus laboriosam libero magnam porro iusto ipsam numquam accusantium eum vel illo obcaecati aut quasi. Quos quidem molestias cumque error suscipit modi ipsa facilis quisquam reiciendis, porro rerum temporibus similique ullam, laboriosam ex numquam quaerat! Vero facere consequatur eum iste? Harum corrupti quam expedita ad tempora debitis voluptates similique tenetur officiis eaque doloremque labore veritatis cumque unde exercitationem facere magnam eum laudantium, delectus consequatur enim odit velit ullam porro. Iure voluptates modi ducimus accusantium placeat vitae voluptas, rerum repudiandae dolorum harum. Ullam, itaque rerum. Facilis dolores impedit autem et nam, earum excepturi maxime sint? Sint facilis error officia. Veritatis at unde ullam, inventore quia, minima repellendus pariatur iusto qui sunt a? Beatae, harum voluptatibus blanditiis error esse quis odit quibusdam praesentium velit iste alias? Enim quam fugiat autem magnam tempora eum corporis aperiam, repudiandae libero, saepe aliquid itaque illum numquam, ratione odit distinctio dolore. Optio tempore fugit tempora sequi ratione, assumenda sint eos rem! Neque assumenda sed obcaecati, quisquam voluptatum laboriosam deserunt odio fugiat, laudantium dolor cum est ab velit. Eum quod eius pariatur deleniti quidem amet soluta consequatur non eveniet autem reprehenderit nostrum voluptates dolore laboriosam iure recusandae mollitia cupiditate, dolores consectetur facere dolorem rerum modi dolor? Facilis numquam tempore accusamus!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, eveniet.</p>
+    </div>
+</body>
+
+</html>

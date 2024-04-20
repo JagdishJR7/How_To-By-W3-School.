@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full sidebar</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+        }
+
+        .sidebar {
+            /* height: 100%;  for auto height auto sidebar*/ 
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            padding-top: 20px;
+            
+
+        }
+
+        .sidebar a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            text-align: center;
+            
+        }
+
+        .sidebar a:hover {
+            color: #f1f1f1;
+        }
+
+        .main {
+            margin-left: 160px;
+            font-size: 20px;
+            padding: 0px 10px;
+        }
+        @media screen and (max-height:450px){
+            .sidebar {padding: 15px;}
+            .sidebar a{font-size: 18px;}
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#clients">Clients</a>
+        <a href="#contact">Contact</a>
+
+    </div>
+
+    <div class="main">
+        <h2>Sidebar</h2>
+        <p>This sidebar is of full height(100%) abd always shown .</p>
+        <p>Scroll down the page to see the result</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea excepturi in ex sapiente reiciendis quibusdam
+            alias, possimus illum nobis doloremque saepe ad tempore, voluptate, quod sint laboriosam. Cumque, quidem
+            ipsum.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis ipsam nihil officiis, totam sunt quia
+            necessitatibus aperiam minus? Quod quis vitae rem sint nobis aliquam dolorem? Tenetur eligendi ex vero.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae sequi odio exercitationem perferendis libero
+            corporis excepturi consequuntur minus laboriosam reprehenderit ducimus totam fugit reiciendis aperiam et
+            quasi vero, facilis in?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid odit similique suscipit facere ducimus
+            beatae adipisci minima earum, quidem magni amet blanditiis necessitatibus et voluptas, possimus omnis fuga
+            repellat quaerat.</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Header</title>
+    <style>
+        body{
+            background-color:#ddd;
+        }
+        /* Style the tab button  */
+        .tablink{
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #555;
+            color: white;
+            float: left;
+            padding: 14px 16px;
+            border: none;
+            outline:none;
+            cursor: pointer;
+            width: 25%;
+            font-size: 17px;
+        }
+        .tablink:hover{
+            background-color: #777;
+
+        }
+        /* h1{
+            color: black;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        } */
+        .tabcontent{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+            display: none;
+            padding: 50px;
+            text-align: center;
+        }
+        #London{background-color: rgb(238, 93, 93);}
+        #Lakhnow{background-color: rgb(236, 173, 56);}
+        #Mumbai{background-color: rgb(103, 103, 199);}
+        #Paris{background-color: rgb(105, 179, 105);}
+    </style>
+
+    <script>
+        function openCity(cityName, elmnt, color){
+            // Hide all element with class tabcontent 
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++){
+                tabcontent[i].style.display = "none";
+            }
+
+            // Remove the background color of all tablinks/buttons
+            tablinks = document.getElementsByClassName("tablink");
+            for (i=0; i < tablinks.length; i++){
+                tablinks[i].style.backgroundColor = "";
+            }
+
+            // show the specific tab content
+            document.getElementById(cityName).style.display = "block";
+
+            //Add the specific color to the button used to open the tabcontent
+            elmnt.style.backgroundColor = color;
+
+            //Get the element with id="defaultOPen" and click on it
+            document.getElementById("defaultOpen").click();
+
+        }
+    </script>
+</head>
+
+<body>
+    <button class="tablink" onclick="openCity('London',this,'red')" id="DefaultOpen">London</button>
+    <button class="tablink" onclick="openCity('Lakhnow',this,'Orange')" id="DefaultOpen">Lakhnow</button>
+    <button class="tablink" onclick="openCity('Mumbai',this,'Blue')" id="DefaultOpen">Mumbai</button>
+    <button class="tablink" onclick="openCity('Paris',this,'green')" id="DefaultOpen">Paris</button>
+
+    <div class="tabcontent" id="London">
+        <h2>London</h1>
+        <p>Tokyo is the capital city of Japan</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quasi asperiores, sit cumque ex cupiditate sequi ut excepturi aliquid quisquam.</p>
+
+    </div>
+
+    <div class="tabcontent" id="Lakhnow">
+        <h2>Lakhnow</h2>
+        <p>Lakhnow is one of the Oldest city in the world</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, aliquam.</p>
+
+    </div>
+
+    <div class="tabcontent" id="Mumbai">
+        <h2>Mumbai</h2>
+        <p>Mumbai is the finencial capital of India</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quaerat sapiente nesciunt facere et? Voluptate odit laudantium architecto nam eius. Eos vitae quos, alias iste dicta exercitationem dolorum aliquid repellendus!</p>
+
+    </div>
+
+    <div class="tabcontent" id="Paris">
+        <h2>Paris</h2>
+        <p>Paris is the captal of France</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque quae voluptatem consequuntur ab amet quod doloribus, earum provident fuga? Sapiente ullam fuga voluptatum vel, aspernatur mollitia reprehenderit placeat pariatur est repellat fugit quidem tempora soluta voluptates totam! Ipsum, praesentium reiciendis.</p>
+    </div>
+
+</body>
+
+</html>

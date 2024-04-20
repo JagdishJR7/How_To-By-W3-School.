@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image grid responsive</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .header {
+        text-align: center;
+        padding: 32px;
+      }
+      /* grid images  */
+      .row {
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+
+      /* Create four equal columns that sits next to each other */
+      .column {
+        -ms-flex: 25%; /* IE10 */
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+      }
+
+      .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+      }
+
+      /* lets make it responsive  */
+      @media screen and (max-width: 800px){
+        .column{
+            -ms-flex: 50%;
+            flex: 50%;
+            max-width: 50%;
+        }
+      }
+
+      @media screen and (max-width: 600px){
+        .column{
+            -ms-flex: 100%;
+            flex: 100%;
+            max-width: 100%;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h2>Responsive Image Grid</h2>
+      <p>Resize the browser window to see the responsive effect.</p>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <img src="img 39/rocks (1).jpg" style="width: 100%" alt="" />
+        <img src="img 39/underwater.jpg" style="width: 100%" alt="" />
+        <img src="img 39/mountainskies.jpg" style="width: 100%" alt="" />
+        <img src="img 39/mist.jpg" style="width: 100%" alt="" />
+        <img src="img 39/falls2.jpg" style="width: 100%" alt="" />
+        <img src="img 39/nature.jpg" style="width: 100%" alt="" />
+        <img src="img 39/paris.jpg" style="width: 100%" alt="" />
+        <img src="img 39/ocean.jpg" style="width: 100%" alt="" />
+        <img src="img 39/wedding (1).jpg" style="width: 100%" alt="" />
+      </div>
+      
+      <div class="column">
+        <img src="img 39/underwater.jpg" style="width: 100%" alt="" />
+        <img src="img 39/nature.jpg" style="width: 100%" alt="" />
+        <img src="img 39/falls2.jpg" style="width: 100%" alt="" />
+        <img src="img 39/wedding (1).jpg" style="width: 100%" alt="" />
+        <img src="img 39/ocean.jpg" style="width: 100%" alt="" />
+        <img src="img 39/rocks (1).jpg" style="width: 100%" alt="" />
+        <img src="img 39/paris.jpg" style="width: 100%" alt="" />
+        <img src="img 39/mist.jpg" style="width: 100%" alt="" />
+        <img src="img 39/mountainskies.jpg" style="width: 100%" alt="" />
+      </div>
+
+      <div class="column">
+        <img src="img 39/falls2.jpg" style="width: 100%" alt="" />
+        <img src="img 39/underwater.jpg" style="width: 100%" alt="" />
+        <img src="img 39/rocks (1).jpg" style="width: 100%" alt="" />
+        <img src="img 39/mountainskies.jpg" style="width: 100%" alt="" />
+        <img src="img 39/ocean.jpg" style="width: 100%" alt="" />
+        <img src="img 39/nature.jpg" style="width: 100%" alt="" />
+        <img src="img 39/mist.jpg" style="width: 100%" alt="" />
+        <img src="img 39/wedding (1).jpg" style="width: 100%" alt="" />
+        <img src="img 39/paris.jpg" style="width: 100%" alt="" />
+      </div>
+
+      <div class="column">
+        <img src="img 39/mist.jpg" style="width: 100%" alt="" />
+        <img src="img 39/underwater.jpg" style="width: 100%" alt="" />
+        <img src="img 39/paris.jpg" style="width: 100%" alt="" />
+        <img src="img 39/ocean.jpg" style="width: 100%" alt="" />
+        <img src="img 39/wedding (1).jpg" style="width: 100%" alt="" />
+        <img src="img 39/rocks (1).jpg" style="width: 100%" alt="" />
+        <img src="img 39/nature.jpg" style="width: 100%" alt="" />
+        <img src="img 39/falls2.jpg" style="width: 100%" alt="" />
+        <img src="img 39/mountainskies.jpg" style="width: 100%" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+

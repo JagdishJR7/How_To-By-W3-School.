@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bottam Navigation</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .navbar{
+            background-color: #333;
+            width: 100%;
+            bottom: 0;
+            position: fixed;
+            overflow: hidden;
+        }
+        .navbar a{
+            text-decoration: none;
+            color: #f2f2f2;
+            font-size: 17px;
+            padding: 14px 16px;
+            display: block;
+            float: left;
+            text-align: center;
+
+        }
+        .navbar a:hover{
+            background: #f1f1f1;
+            color: black;
+        }
+        .navbar a.active{
+            background-color: #04AA6d;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="#news">News</a>
+    </div>
+
+    <div class="main">
+        <h2>Bottam Navigation Bar</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, vel.</p>
+    </div>
+</body>
+</html>

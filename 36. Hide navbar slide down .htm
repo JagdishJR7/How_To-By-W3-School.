@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Down NavBar</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #999;
+            margin: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #navbar {
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            display: block;
+            transition: top 0.3s;
+            /* overflow: auto; */
+            /* margin: 20px; */
+            /* padding: 15px; */
+        }
+
+        #navbar a {
+            float: left;
+            display: block;
+            padding: 20px;
+            color: #f2f2f2;
+            text-decoration: none;
+            font-size: 20px;
+            width: 25%;
+            text-align: center;
+
+        }
+
+        /* .navbar a:hover {
+            background-color:#ddd;
+        } */
+
+        /* .navbar a.active {
+            background-color: #04aa6d;
+        } */
+
+        .main{
+            padding: 15px 15px ;
+            margin-top:20px ;
+        }
+
+        @media screen and (max-wdith:500px) {
+            #navbar a {
+                float: none;
+                display: block;
+                width: 100%;
+                text-align: left;
+            }
+        }
+    </style>
+
+    <script>
+        var prevScrollPos = window.pageYOffset;
+        window.onscroll  = function(){
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollPos > currentScrollPos){
+                document.getElementById('navbar').style.top = "0";
+            }
+            else{
+                document.getElementById('navbar').style.top = "-50px"
+            }
+            prevScrollPos = currentScrollPos;
+        }
+    </script>
+</head>
+
+<body>
+    <div id="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#search">Search</a>
+        <a href="#contact">Contact</a>
+        <a href="#services">Services</a>
+    </div>
+    <div style="padding: 15px 15px 2500px; font-size: 15px;" class="main">
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure vero impedit voluptatum illo veritatis in voluptate, ut eius eaque nesciunt?</h2>
+        <!-- <h1>Fixed Top Menu</h1> -->
+        <!-- <h2>Scroll this page to see the effect </h2> -->
+        
+        <h2>The Navigatin bar will stay at the top of the page while scrolling</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, fugiat!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, fugiat!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, fugiat!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, fugiat!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, fugiat!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, fugiat!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, fugiat!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, fugiat!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, fugiat!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, fugiat!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, fugiat!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, fugiat!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, fugiat!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, fugiat!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, fugiat!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, fugiat!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, fugiat!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, fugiat!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, fugiat!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, fugiat!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, fugiat!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, fugiat!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, fugiat!</p>
+    </div>
+
+    
+
+
+</body>
+
+</html>
